@@ -11,14 +11,17 @@
 
 ![image](https://github.com/user-attachments/assets/f8a5c2f3-a83a-4ffc-bc64-e8bb45ff782c)
 
+---
 
-1SPP，max_depth=6的渲染结果：
+## 对比：质量
 
-![image](https://github.com/user-attachments/assets/a6c2dade-a799-4f24-bb88-607dd22f1216)
+| 1SPP,MAX_DEPTH = 6 | 路径图迭代10轮 |
+| --- | --- |
+| ![原图](https://github.com/user-attachments/assets/a6c2dade-a799-4f24-bb88-607dd22f1216) | ![迭代后](https://github.com/user-attachments/assets/e2d957c2-fd2f-4de8-8aaf-198101ba20e9) |
 
-路径图迭代10轮后的效果：
-
-![image](https://github.com/user-attachments/assets/e2d957c2-fd2f-4de8-8aaf-198101ba20e9)
+**图注：**
+- **左图**：1spp，max_depth = 6的渲染结果。
+- **右图**：左图基础上，10轮Path Graph迭代的结果。
 
 迭代一定数量后，重建的图像质量好了很多，再配合降噪手段可以取得不错的效果。不过收集的路径信息或许也可以用来专门设计一个神经网络降噪器，效果应该会更好。
 # 优缺点分析
